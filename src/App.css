@@ -39,7 +39,7 @@ input {
   transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 5;
+  z-index: 5000;
 }
 
 form {
@@ -55,12 +55,37 @@ form {
 }
 
 form.sign-up-form {
-  opacity: 0;
+  opacity:0;
   z-index: 1;
+  
 }
 
 form.sign-in-form {
   z-index: 2;
+}
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(100%); /* Move the sign-up form out of view */
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+form.sign-in-form {
+  z-index: 2;
+  transform: translateX(0); /* Keep the sign-in form in view */
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
+.container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(0); /* Bring the sign-up form into view */
+}
+
+.container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(-100%); /* Move the sign-in form out of view */
 }
 
 .title {
@@ -401,3 +426,9 @@ form.sign-in-form {
     left: 50%;
   }
 }
+
+
+
+
+
+

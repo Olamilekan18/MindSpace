@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faWhatsapp, faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faCoffee, faHome, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faWhatsapp, faTwitter, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faUser, faCoffee, faHome, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 const Login = () => {
@@ -48,7 +48,7 @@ const Login = () => {
     <FontAwesomeIcon icon={faTwitter} />
   </a>
   <a href="#" className="social-icon">
-    <FontAwesomeIcon icon={faDiscord} />
+    <FontAwesomeIcon icon={faInstagram} />
   </a>
             </div>
           </form>
@@ -57,10 +57,10 @@ const Login = () => {
             <h2 className="title">Sign Up</h2>
             <div className="input-field">
             <i> <FontAwesomeIcon icon={faUser} /></i>
-              <input type="text" placeholder="Username"required /><input type="text" placeholder="Username" required/>
+              <input type="text" placeholder="Username"required />
             </div>
             <div className="input-field">
-              <i className="fas fa-envelope"></i>
+            <i> <FontAwesomeIcon icon={faEnvelope} /></i>
               <input type="email" placeholder="Email" required/>
             </div>
             <div className="input-field">
@@ -70,18 +70,18 @@ const Login = () => {
             <input type="submit" value="Sign Up" className="btn solid" required/>
             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">
-              <a href="#" className="social-icon">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-google"></i>
-              </a>
-              <a href="#" className="social-icon">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
+            <a href="#" className="social-icon">
+      <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+            <a href="#" className="social-icon">
+    <FontAwesomeIcon icon={faWhatsapp} />
+  </a>
+  <a href="#" className="social-icon">
+    <FontAwesomeIcon icon={faTwitter} />
+  </a>
+  <a href="#" className="social-icon">
+    <FontAwesomeIcon icon={faInstagram} />
+  </a>
             </div>
           </form>
         </div>
