@@ -36,6 +36,7 @@ const Login = () => {
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" className="btn solid" required/>
+            
             <p className="social-text">Or Sign in with social platforms</p>
             <div className="social-media">
             <a href="#" className="social-icon">
@@ -68,6 +69,8 @@ const Login = () => {
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Sign Up" className="btn solid" required/>
+            <div className="checkbox-checking"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required/>
+            <label for="vehicle1"> I have read the <a href='#tandc'>Terms and Conditions</a></label><br></br></div>
             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">
             <a href="#" className="social-icon">
@@ -91,7 +94,7 @@ const Login = () => {
           <div className="content">
             <h3>New here?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus natus est.
+              Join a group of students who are intentional about their mental health
             </p>
             <button className="btn transparent" id="sign-up-btn">Sign Up</button>
           </div>
@@ -100,9 +103,9 @@ const Login = () => {
 
         <div className="panel right-panel">
           <div className="content">
-            <h3>One of us?</h3>
+            <h3>Have an account?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus natus est.
+             Continue to grow with pasionate students like you who are intentional about their mental health
             </p>
             <button className="btn transparent" id="sign-in-btn">Sign In</button>
           </div>

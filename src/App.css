@@ -155,11 +155,14 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
+} */
+.social-icon:hover {
+  color: #fafef9;
+  background-color: #5995fd;
 }
-
 .btn {
   width: 150px;
   background-color: #5995fd;
