@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Section 1 */
+.container{
+box-sizing: border-box;
+
+position: relative;
+width: 1640px;
+height: 1224px;
+
+background: #5a1818;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+}
+.dashboard{
+  /* Group 48095633 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+left: 100px;
+top: 100px;
+background-color: rgba(255, 255, 255, 0.8);
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+background-color: #fff;
+padding: 10px;
+
+}
+
+
+/* Rectangle 2777 */
+.grid-item1{
+  /* background-color: #7e4343; */
+position: absolute;
+width: 341px;
+height: 1024px;
+/* left: 100px; */
+/* top: 100px; */
+
+background: #FAFAFA;
+}
+
+h1{
+
+position: absolute;
+/* width: 110px;
+height: 24px;
+left: 135px;
+top: 199px; */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+/* align-items: center;
+text-align: center; */
+letter-spacing: 0.4px;
+
+color: #000000;
+}
+.welcome-back{
+  left: 20px;
+  position: absolute;
+  top:100px;
+  display:flex;
+}
+.pfp{
+  left:20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  
+}
+.welcome-text{
+  position: relative;
+  top:40px;
+  font-family: 'Inter', sans-serif;
+  font: bold;
+}
+.activities-bar{
+  margin-top: 35px;
+  gap:40px;
+  display: flex;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+.feature-tab{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top:20px;
+  top:250px;
+}
+.home{
+  margin-left: 20px;
+  display: flex;
+  gap:60px;
+  margin-top:60px;
+}
+.home-feature-text{
+  position: relative;
+  margin-top:19px
+}
+.grid-item2{
+  background: #F5F5FF;
+  position: relative;
+  left:400px;
+  width: 644px;
+  margin-left: -70px;
+  margin-top: -10px;
+
+}
+.profile-navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+
+}
+.search-bar{
+  cursor: text;
+}
+.edit-profile{
+  position: absolute;
+  top:125px;
+  margin:20px;
+  font:  bold;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 18px;
+/* or 56% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.4px;
+
+color: #000000;
+
+}
+.card{
+color: #fafafa;
+position: absolute;
+width: 572px;
+height: 234px;
+margin-left: 20px;
+/* left: 173px; */
+top: 200px;
+display: flex;
+justify-content: center;
+gap: 80px;
+align-items: center;
+background: #1A1A54;
+border-radius: 30px;
+
+}
+.card-2{
+  top:480px;
+  /* Rectangle 2787 */
+
+background: #979797;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+
+}
+svg{
+  cursor: pointer;
+}
+.upper-card{
+  margin-top: 20px;
+  display: flex;
+  gap: 60px;
+
+}
+.middle-card{
+  position: absolute;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+.lower-card{
+  display: flex;
+  margin-bottom: 10px;
+  gap: 60px;
+
+}
+.card-3{
+  top:750px;
+  display: flex;
+  flex-direction: column;
+  background: #979797;
+
+}
+
+.grid-item3{
+  background: #FAFAFA;
+
+  position: absolute;
+  left: 1000px;
+  background: #FAFAFA;
+
+}
+.resources-heading{
+
+position: absolute;
+width: 398px;
+height: 68px;
+padding: 8px;
+/* left: 113px; */
+top: 114px;
+font: bold 22px;
+font-weight: 700;
+background: #D9D9D9;
+border-radius: 20px;
+}
+.progress{
+  position: relative;
+  width: 398px;
+  height: 68px;
+  padding: 8px;
+  left: 413px;
+  top: 614px;
+  font: bold 22px;
+  font-weight: 700;
+  background: #D9D9D9;
+  border-radius: 20px;
+  padding: auto;
+  /* margin:auto */
+}
+
+.anon-p{
+  text-align: center;
+}
+.anon{
+  /* Online Resources */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+gap: 10px;
+
+position: absolute;
+width: 402px;
+height: 184px;
+left: 1000px;
+top: 221px;
+
+background: rgba(239, 93, 168, 0.1);
+border-radius: 24px;
+
+}
+.connect{
+  /* Meetup Icon */
+
+margin: 0 auto;
+width: 68.22px;
+height: 64px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.join-now{
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+}
+.join-p{
+  color: #EF5DA8;
+
+}
+.health-only{
+  position: absolute;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 397px;
+  height: 146.14px;
+  left: 1000px;
+  top: 443px;
+  
+  background: #FEF4EA;
+  border-radius: 24px;
+}
+
+/* .click-here{
+  color: #F09A59;
+
+} */
+ .progress-card{
+  position: relative;
+  top: 680px;
+ }
