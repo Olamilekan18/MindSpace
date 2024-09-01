@@ -100,6 +100,7 @@ color: #000000;
   top:250px;
 }
 .home{
+  cursor: pointer;
   margin-left: 20px;
   display: flex;
   gap:60px;
@@ -312,5 +313,144 @@ flex-grow: 0;
 } */
  .progress-card{
   position: relative;
-  top: 680px;
+  top: 8px;
+ }
+
+.feeling-p{
+  /* How are you feeling today? */
+
+position: absolute;
+width: 470px;
+height: 130px;
+/* left: 395px; */
+top: 137px;
+margin-left: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+text-align: center;
+
+}
+/* .moods{
+  display: flex;
+  position: relative;
+  top:180px;
+  justify-content: space-between;
+} */
+.MoodTracker{
+  position: absolute;
+  top:400px;
+}
+/* .carousel{
+  height: 100px;
+} */
+.carousel-image {
+  max-height: 300px; /* Set your desired max height */
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  height: 300px; /* Ensure the container doesn't collapse */
+}
+.mobile-version{
+  display: none;
+}
+.mobile-pfp{
+  margin-left: 20px;
+
+}
+ /* Responsiveness */
+ @media only screen and (max-width: 1694px){
+    .dashboard{
+      height: cover;
+      width: 100%;
+    }
+ }
+ @media only screen and (max-width: 768px){
+   .mobile-version{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+   .desktop-version{
+    display: none;
+   }
+   .top-navbar{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   }
+   .feeling-text{
+    margin: 20px;
+    margin-bottom: 0;
+   }
+   .moods{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    /* margin-top: -120px; */
+    /* Frame 142 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 92%;
+height: 140px;
+padding: 10px;
+
+background: #D8F9FF;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+   }
+   .dash-text{
+    position: absolute;
+    font-size: 26px;
+    top: 400px;
+    margin: 20px;
+    margin-bottom: 40px;
+
+   }
+   .mobile-v{
+    height: 20%;
+    position: absolute;
+    top: 470px;
+    left: 20px;
+    margin-top: 20px;
+   }
+   .v2{
+    margin-top: 40px;
+    top:720px;
+   }
+   .bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px;
+    margin-right: 25px;
+position: absolute;
+    bottom:10px;
+    /* Hone Nav */
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9);
+
+   }
  }
