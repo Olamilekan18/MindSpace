@@ -1,23 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './Pages/Home';
+import AccountPage from './Pages/Account';
+import Resources from './Pages/Resources';
 
-import HomePage from './Pages/Home.jsx'
-import AccountPage from './Pages/Account.jsx';
-import Login from './Pages/Login.jsx'
-import MoodGraph from './Pages/MoodGraph.jsx';
-import MoodTracker from './Pages/MoodTracker.jsx';
-import { Link, Route, BrowserRouter as  Router, Routes } from "react-router-dom";
+
 function App() {
-    return (
-        <div className="App">
-          <Router>
-            <HomePage/>
-            <Routes>
-                <Route exact path='C:\Users\PC\Desktop\SafeSpace 2\src\Pages\Account.jsx' element = {<AccountPage/>} />
-            </Routes>
-          </Router>
-          {/* <HomePage/> */}
-        </div>
-    );
+  return (
+    <Router>
+      <nav>
+        <ul>
+          {/* <li><Link to="/">Home</Link></li>
+          <li><Link to="/account">Account</Link></li> */}
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path = '/Resources' element = {<Resources/>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

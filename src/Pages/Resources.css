@@ -1,0 +1,84 @@
+.search-bar{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.ment-books{
+    /* Rectangle 2764 */
+
+position: absolute;
+width: contain;
+padding: 10px;
+height: 20px;
+left: 17px;
+top: 100px;
+
+background: #D9D9D9;
+border-radius: 10px;
+
+}
+.books{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-top: 100px;
+  gap: 10px;
+  margin-bottom: 100px;
+
+}
+.videos{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: auto auto auto ;
+  padding: 10px;
+  margin-top: 100px;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+.image{
+    height: 250px;
+    width: 200px;
+}
+.mental-vid-text{
+    position: absolute;
+width: contain;
+padding: 10px;
+height: 20px;
+left: 17px;
+bottom: 100px;
+
+background: #D9D9D9;
+border-radius: 10px;
+}  
+body{
+    width: 100%;
+}
+.bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    /* margin: 20px; */
+    margin-right: 25px;
+    bottom: -3  00px;
+  position: absolute;
+    /* bottom:-80px; */
+    /* Hone Nav */
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9);
+
+   }
+   .home-link{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    bottom: -18px;
+    left: -18px;
+   }
+   @media only screen and (max-width: 768px){
+    .bottom-nav{
+        position: absolute;
+        bottom: 30px;
+        /* top: 1200px; */
+        /* color: #D9D9D9; */
+    }
+   }

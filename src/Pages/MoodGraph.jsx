@@ -4,10 +4,10 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const MoodGraph = ({ moodData }) => {
   // Convert mood data to numeric values for the graph
   const moodMapping = {
-    'Happy😊': 4,
-    'Neutral😐': 3,
-    'Sad😢': 2,
-    'Anxious😟': 1,
+    'Happy': 4,
+    'Neutral': 3,
+    'Sad': 2,
+    'Anxious': 1,
   };
 
   const data = moodData.map((entry) => ({

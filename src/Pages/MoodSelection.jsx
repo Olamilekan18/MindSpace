@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 const MoodSelector = ({ onMoodSelect }) => {
-  const moods = ['Happy😊 ',  "Sad😢", "Neutral😢 ", 'Anxious😟'];
+  const moods = ['Happy', 'Sad', 'Neutral', 'Anxious'];
+
   return (
     <div>
-      <h2 style={{marginBottom: '20px'}}>How are you feeling today?</h2>
+      <h2>Select Your Mood</h2>
       <div style={{ display: 'flex', gap: '10px' }}>
         {moods.map((mood) => (
           <div
