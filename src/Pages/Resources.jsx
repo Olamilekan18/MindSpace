@@ -91,7 +91,6 @@ const Resources= () =>{
   </div>
 </div>
 
-
         </body>
     )
 }

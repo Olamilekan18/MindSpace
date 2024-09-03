@@ -76,9 +76,9 @@ body{
    }
    @media only screen and (max-width: 768px){
     .bottom-nav{
-        position: absolute;
-        bottom: 30px;
+        position: relative;
+        /* bottom: 30px;  */
         /* top: 1200px; */
-        /* color: #D9D9D9; */
+        color: #D9D9D9;
     }
    }
