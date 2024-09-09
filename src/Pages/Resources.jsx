@@ -40,6 +40,16 @@ const Resources= () =>{
     <img className='image' src="https://images.penguinrandomhouse.com/cover/9781637741580" alt="" />
     <img className='image' src="https://media.self.com/photos/5ecfead2c03ef7b8f8812f84/16:9/w_1279,h_719,c_limit/product-roundup_mentalhealthbooks.jpg" alt="" />
     <img className='image' src="https://m.media-amazon.com/images/I/718A6RecZKL._AC_UF1000,1000_QL80_.jpg" alt="" />
+    <img className = 'image' width ='400px' src = "src\assets\img1.jpeg"/>
+    <img className = 'image' src = "src\assets\img2.jpeg"/>
+    <img className = 'image' src = "src\assets\img3.jpg"/>
+    <img className = 'image' src = "src\assets\img4.jpg"/>
+    <img className = 'image' src = "src\assets\img5.jpg"/>
+    <img className = 'image' src = "src\assets\img6.jpg"/>
+    <img className = 'image' src = "src\assets\img7.jpeg"/>
+    <img className = 'image' src = "src\assets\img6.jpg"/>
+    <img className = 'image' src = "src\assets\img9.jpg"/>
+    <img className = 'image' src = "src\assets\img10.jpg"/>
 </div>
 <div className="re-use">
     <p className='mental-vid-text'>Mental Health Videos </p>

@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import '../Pages/./Resources.css'
 
 
 const SimpleCarousel = () => {
@@ -17,19 +18,31 @@ const SimpleCarousel = () => {
 
   return (
     <div style={{ width: "80%", margin: "0 auto", height: "contain" }}>
-      <h2>React Slick Carousel</h2>
+      <h2>Daily Affirmations</h2>
       <Slider {...settings}>
         <div>
-          <img src="https://media.istockphoto.com/id/183821822/photo/say.jpg?s=612x612&w=0&k=20&c=kRmCjTzA9cq4amgRgeHkZsZuvxezUtC8wdDYfKg-mho=" alt="Slide 1" />
+          <img className='slide-img' src="https://hips.hearstapps.com/hmg-prod/images/marianne-williamson-quote-1621371062.jpg" alt="Slide 1" />
         </div>
         <div>
-          <img src="https://plus.unsplash.com/premium_photo-1688891564708-9b2247085923?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="Slide 2" />
+          <img className='slide-img' src="https://hips.hearstapps.com/hmg-prod/images/oprah-quote-1621368137.jpg" alt="Slide 2" />
         </div>
         <div>
-          <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="Slide 3" />
+          <img className='slide-img' src="https://www.wondermind.com/wp-content/uploads/2023/07/TK-Daily-Affirmations-for-Whatever-Youre-Going-Through-1.png" alt="Slide 3" />
         </div>
         <div>
-          <img src="https://www.shutterstock.com/image-photo/very-random-pose-asian-men-260nw-2423213779.jpg" alt="Slide 4" />
+          <img className='slide-img' src="https://blog.gratefulness.me/content/images/2022/04/daily-affirmations-list.jpg" alt="Slide 4" />
+        </div>
+        <div>
+          <img className='slide-img' src="https://zannakeithley.com/wp-content/uploads/2021/04/7-min-1-683x1024.png" alt="Slide 4" />
+        </div>
+        <div>
+          <img className='slide-img' src="https://www.wondermind.com/wp-content/uploads/2023/04/V2-1.png?w=960" alt="Slide 4" />
+        </div>
+        <div>
+          <img className='slide-img' src="https://hips.hearstapps.com/hmg-prod/images/25-1610491062.png" alt="Slide 4" />
+        </div>
+        <div>
+          <img className='slide-img' src="https://www.wondermind.com/wp-content/uploads/2023/07/TK-Daily-Affirmations-for-Whatever-Youre-Going-Through-1.png" alt="Slide 4" />
         </div>
       </Slider>
     </div>

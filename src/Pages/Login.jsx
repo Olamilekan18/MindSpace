@@ -1,15 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { auth } from '../firebaseConfig';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 import '../App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faWhatsapp, faTwitter, faDiscord, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faCoffee, faHome, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 const Login = () => {
   useEffect(() => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const navigate = useNavigate()
     const sign_in_btn = document.querySelector("#sign-in-btn");
     const sign_up_btn = document.querySelector("#sign-up-btn");
     const container = document.querySelector(".container");
+
+    const handleLogin = async (e) =>{
+      e.preventDefault();
+      try {
+        await signInWithEmailAndPassword(auth,email,password);
+        navigate("/home")
+      } 
+      catch (error) {
+        console.error("Failed to log in", error.message)
+      }
+    }
+
+    const SignUp = () => {
+      const [email, setEmail]  = useState("")
+      const [password, setPassword] = useState("")
+      const [error, setError] = useState("");
+      const navigate = useNavigate()
+
+      const handleSignUp = async (e) =>{
+        e.preventDefault();
+        setError("")
+
+        try {
+          await createUserWithEmailAndPassword(auth,email,password);
+          navigate ('/home')
+        } catch (error) {
+          setError(error.message)
+        }
+      }
+    }
 
     sign_up_btn.addEventListener("click", () => {
       container.classList.add("sign-up-mode");
@@ -25,17 +62,32 @@ const Login = () => {
     <div className="container">
       <div className="forms-container">
         <div className="signin-signup">
-          <form className="sign-in-form">
+          <form className="sign-in-form" onSubmit = {handleLogin}>
             <h2 className="title">Sign In</h2>
             <div className="input-field">
            <i> <FontAwesomeIcon icon={faUser} /></i>
-              <input type="text" placeholder="Username"required />
+              <input type="email" 
+              placeholder="email"
+              value={email}
+              onChange={(e)=>
+                setEmail(e.target.value)
+              }
+              required />
             </div>
             <div className="input-field">
            <i> <FontAwesomeIcon icon={faLock} /></i>
-              <input type="password" placeholder="Password" />
+              <input type="password"
+               placeholder="Password"
+               value={password}
+               onChange={(e)=>
+                setPassword(e.target.value)
+               }
+               />
             </div>
-            <input type="submit" value="Login" className="btn solid" required/>
+            <input type="submit"
+             value="Login"
+             onClick={handleLogin}
+              className="btn solid" required/>
             
             <p className="social-text">Or Sign in with social platforms</p>
             <div className="social-media">
@@ -54,7 +106,7 @@ const Login = () => {
             </div>
           </form>
 
-          <form className="sign-up-form">
+          <form onSubmit={handleSignUp} className="sign-up-form">
             <h2 className="title">Sign Up</h2>
             <div className="input-field">
             <i> <FontAwesomeIcon icon={faUser} /></i>
@@ -62,13 +114,17 @@ const Login = () => {
             </div>
             <div className="input-field">
             <i> <FontAwesomeIcon icon={faEnvelope} /></i>
-              <input type="email" placeholder="Email" required/>
+              <input type="email" value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email" required/>
             </div>
             <div className="input-field">
             <i> <FontAwesomeIcon icon={faLock} /></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"  required/>
             </div>
-            <input type="submit" value="Sign Up" className="btn solid" required/>
+            <input type="submit" onClick={handleSignUp} value="Sign Up" className="btn solid" required/>
             <div className="checkbox-checking"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required/>
             <label for="vehicle1"> I have read the <a href='#tandc'>Terms and Conditions</a></label><br></br></div>
             <p className="social-text">Or Sign up with social platforms</p>

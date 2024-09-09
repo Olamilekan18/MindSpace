@@ -1,10 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDMI19EluzoZ_QE9vMnHutSIqyKMQs_1ZM",
-    authDomain: "safespace-9b00e.firebaseapp.com",
-    projectId: "safespace-9b00e",
-    storageBucket: "safespace-9b00e.appspot.com",
-    messagingSenderId: "884438897602	",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyC_Bjx8wJez5N7Q0n7e_SA9lIwK2Mopqa4",
+    authDomain: "mindspace-82463.firebaseapp.com",
+    projectId: "mindspace-82463",
+    storageBucket: "mindspace-82463.appspot.com",
+    messagingSenderId: "529861969233",
+    appId: "1:529861969233:web:843409598344e0bf8bbf70",
+    measurementId: "G-QKJ77DDV2C"
 };
 
 const app = initializeApp(firebaseConfig);
