@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "rm -rf node_modules",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -22,7 +23,8 @@
     "react-router-dom": "^6.26.1",
     "react-slick": "^0.30.2",
     "recharts": "^2.12.7",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vite-plugin-vercel": "^9.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
