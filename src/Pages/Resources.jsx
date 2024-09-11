@@ -40,16 +40,16 @@ const Resources= () =>{
     <img className='image' src="https://images.penguinrandomhouse.com/cover/9781637741580" alt="" />
     <img className='image' src="https://media.self.com/photos/5ecfead2c03ef7b8f8812f84/16:9/w_1279,h_719,c_limit/product-roundup_mentalhealthbooks.jpg" alt="" />
     <img className='image' src="https://m.media-amazon.com/images/I/718A6RecZKL._AC_UF1000,1000_QL80_.jpg" alt="" />
-    <img className = 'image' width ='400px' src = "src\assets\img1.jpeg"/>
-    <img className = 'image' src = "https://images.app.goo.gl/ykdSAMXSZe75ddN3A"/>
-    <img className = 'image' src = "https://images.app.goo.gl/DKVdS2zXtQ8N5xZM9"/>
-    <img className = 'image' src = "https://images.app.goo.gl/5EZHYeQYzGnGJ6iv5"/>
-    <img className = 'image' src = "https://images.app.goo.gl/1f76spEtCa1Jqoza9"/>
-    <img className = 'image' src = "https://images.app.goo.gl/jzAfLfiJk9TpNmb16"/>
-    <img className = 'image' src = "https://images.app.goo.gl/K3ZT1HHmnnJ86s2G8"/>
-    <img className = 'image' src = "https://images.app.goo.gl/xdBoDtZAXyyDuuwR6"/>
-    <img className = 'image' src = "https://images.app.goo.gl/oYe3ASMfPeNmei1R9"/>
-    <img className = 'image' src = "https://images.app.goo.gl/iYkM3SWAZ7kvMMoX9"/>
+    <img className = 'image' width ='400px' src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.simonandschuster.com%2Fbooks%2FYoung-Mental-Health%2FAmrita-Tripathi%2F9789386797476&psig=AOvVaw2_qECXp43POYVtGQBvJQ4v&ust=1726125519671000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiH7vSsuogDFQAAAAAdAAAAABAE"/>
+    <img className = 'image' src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FIntroduction-Mental-Health-Jo-Augustus%2Fdp%2F1526423634&psig=AOvVaw2_qECXp43POYVtGQBvJQ4v&ust=1726125519671000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiH7vSsuogDFQAAAAAdAAAAABAJ"/>
+    <img className = 'image' src = "https://www.casanorberto.com/image/cache/catalog/products/9781578266746-500x500.jpg"/>
+    <img className = 'image' src = "https://parade.com/.image/t_share/MTkxNzU5NTE2NjQ2MjU0MjQz/body-keeps-score-3.png"/>
+    <img className = 'image' src = "https://images.routledge.com/common/jackets/crclarge/978041526/9780415264549.jpg"/>
+    <img className = 'image' src = "https://jabirupublishing.com.au/wp-content/uploads/Little-Book-on-Mental-Health-and-Wellbeing.jpg "/>
+    <img className = 'image' src = "https://mentalhealth101.org/wp-content/uploads/2020/11/Mental-Health-101-Book-Cover-Mockup-Master-1-912x1024.png"/>
+    <img className = 'image' src = "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6490c4211481f2c4830fe7a7_Mental-health-books-18.jpg"/>
+    <img className = 'image' src = "https://therapy2thrive.com/wp-content/uploads/2013/06/Healing-Feeling-2017-front.jpg"/>
+    <img className = 'image' src = "https://missingtoothgrins.com/wp-content/uploads/2021/06/2.jpg"/>
 </div>
 <div className="re-use">
     <p className='mental-vid-text'>Mental Health Videos </p>
