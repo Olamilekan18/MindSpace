@@ -41,15 +41,15 @@ const Resources= () =>{
     <img className='image' src="https://media.self.com/photos/5ecfead2c03ef7b8f8812f84/16:9/w_1279,h_719,c_limit/product-roundup_mentalhealthbooks.jpg" alt="" />
     <img className='image' src="https://m.media-amazon.com/images/I/718A6RecZKL._AC_UF1000,1000_QL80_.jpg" alt="" />
     <img className = 'image' width ='400px' src = "src\assets\img1.jpeg"/>
-    <img className = 'image' src = "src\assets\img2.jpeg"/>
-    <img className = 'image' src = "src\assets\img3.jpg"/>
-    <img className = 'image' src = "src\assets\img4.jpg"/>
-    <img className = 'image' src = "src\assets\img5.jpg"/>
-    <img className = 'image' src = "src\assets\img6.jpg"/>
-    <img className = 'image' src = "src\assets\img7.jpeg"/>
-    <img className = 'image' src = "src\assets\img6.jpg"/>
-    <img className = 'image' src = "src\assets\img9.jpg"/>
-    <img className = 'image' src = "src\assets\img10.jpg"/>
+    <img className = 'image' src = "https://images.app.goo.gl/ykdSAMXSZe75ddN3A"/>
+    <img className = 'image' src = "https://images.app.goo.gl/DKVdS2zXtQ8N5xZM9"/>
+    <img className = 'image' src = "https://images.app.goo.gl/5EZHYeQYzGnGJ6iv5"/>
+    <img className = 'image' src = "https://images.app.goo.gl/1f76spEtCa1Jqoza9"/>
+    <img className = 'image' src = "https://images.app.goo.gl/jzAfLfiJk9TpNmb16"/>
+    <img className = 'image' src = "https://images.app.goo.gl/K3ZT1HHmnnJ86s2G8"/>
+    <img className = 'image' src = "https://images.app.goo.gl/xdBoDtZAXyyDuuwR6"/>
+    <img className = 'image' src = "https://images.app.goo.gl/oYe3ASMfPeNmei1R9"/>
+    <img className = 'image' src = "https://images.app.goo.gl/iYkM3SWAZ7kvMMoX9"/>
 </div>
 <div className="re-use">
     <p className='mental-vid-text'>Mental Health Videos </p>
